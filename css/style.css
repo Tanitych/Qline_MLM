@@ -1426,3 +1426,128 @@ footer .down {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.bread_crumps .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.bread_crumps a {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: #222222;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  margin: 0px 10px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bread_crumps a:hover {
+  color: #1e4179;
+}
+.bread_crumps a.active {
+  color: #1e4179;
+}
+.bread_crumps a img {
+  margin: 0px 0px 0px 10px;
+}
+
+.basket_block {
+  padding: 30px 80px;
+}
+
+.basket_content .text {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 329px;
+  margin: 0px 0px 0px 20px;
+}
+.basket_content .text span {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #a6a6a6;
+  margin: 6px 0px 0px 0px;
+}
+.basket_content .item_img {
+  overflow: hidden;
+  border-radius: 10px;
+  max-width: 150px;
+  max-height: 150px;
+}
+.basket_content .item_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.basket_content .product_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0px 30px 0px;
+  border-bottom: 1px solid #f1f3f6;
+}
+
+.basket_btn {
+  background-color: #ffffff;
+}
+
+.basket_content .quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.basket_content .quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484d;
+  font-weight: 300;
+}
+.basket_content button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #e1e8ee;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.basket_content .minus-btn img {
+  margin-bottom: 3px;
+}
+.basket_content .plus-btn img {
+  margin-top: 2px;
+}
+.basket_content button:focus,
+.basket_content input:focus {
+  outline: 0;
+}
