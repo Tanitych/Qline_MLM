@@ -141,10 +141,7 @@ $("#chat-file").change(function () {
         file_array.push(value);
         $('.preview__container').append(`
         <div class="preview__content">
-            <div class="img file_img"><img src="img/icons/profile.svg" alt=""><img class="file-cross delete_file" data-id="${file_array.length - 1}" src="img/icons/корзина.svg" alt=""></div>
-         
-            
-           
+            <div class="img file_img"><img src="img/icons/tip_icon.jpg" alt=""><img class="file-cross delete_file" data-id="${file_array.length - 1}" src="img/icons/delete.jpg" alt=""></div>
         </div>
         `);
     });

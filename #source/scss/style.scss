@@ -1819,6 +1819,12 @@ button {
   }
   .payment_img {
     max-width: 100%;
+    @media (max-width: 1200px) {
+      max-width: 390px;
+    }
+    @media (max-width: 991px) {
+      max-width: 290px;
+    }
   }
 }
 .payment_section {
@@ -1829,6 +1835,7 @@ button {
     font-size: 26px;
     line-height: 28px;
     color: #111621;
+    margin: 0px 0px 16px 0px;
   }
 }
 .payment_btn {
@@ -1836,14 +1843,16 @@ button {
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
+  margin: 0px 40px 0px 0px;
   @media (max-width: 768px) {
     width: 100%;
+    margin: 0px 0px 0px 0px !important;
   }
   .img_text {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 13px 0px 15px 0px;
+    padding: 13px 10px 15px 0px;
     border-bottom: 0.5px solid #e5e5e5;
     .text {
       display: block;
@@ -1898,6 +1907,7 @@ button {
 }
 
 .modal-body {
+  padding: 0px 0px;
   .title {
     font-style: normal;
     font-weight: normal;
@@ -1908,6 +1918,7 @@ button {
     color: #424242;
     max-width: 350px;
     margin: 0 auto;
+
     span {
       color: #1e4179;
       font-weight: bold;
@@ -1945,11 +1956,11 @@ button {
 }
 
 .modal-dialog {
-  padding: 4px 7px 10px 7px;
+  padding: 4px 24px 24px 24px;
   border-radius: 10px;
   box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.15);
   max-width: 398px;
-  margin: 10% auto 0 auto;
+  margin: 5% auto 5% auto;
   background-color: #fff;
 }
 .modal-content {
@@ -1962,19 +1973,20 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(185, 194, 207, 0.4);
-  padding: 0px 0px 3px 0px;
+  border-bottom: 0.5px solid #e5e5e5;
+  padding: 21px 0px;
   @media (max-width: 410px) {
     flex-direction: column;
     align-items: center;
   }
   .appointment_text {
     font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-
-    color: #282828;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    color: #424242;
+    margin: 0px 0px 0px 0px;
     @media (max-width: 420px) {
       margin-bottom: 5px;
     }
@@ -1996,10 +2008,7 @@ button {
 
 .preview__container {
   width: 100%;
-  max-width: 210px;
   display: flex;
-  margin-right: 11px;
-  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
@@ -2008,7 +2017,6 @@ button {
   align-items: center;
   justify-content: center;
   position: relative;
-
   .file_img {
     position: relative;
   }
@@ -2016,9 +2024,10 @@ button {
 
 .preview__content .img {
   margin: 0px 4px 7px 3px;
+  display: flex;
+  align-items: center;
 }
 .preview__content img {
-  max-width: 35px;
   object-fit: cover;
 }
 .chat-file-label {
@@ -2036,19 +2045,25 @@ button {
     margin-right: 4px;
   }
   p {
-    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
     line-height: 18px;
-
-    color: #4493f2;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: -0.08px;
+    color: #1e4179;
+    margin: 0px 8px 0px 0px;
   }
 }
 
 .delete_file {
   max-width: 18px;
-  max-height: 18px;
-  position: absolute;
-  right: -9px;
-  top: -9px;
+  min-width: 18px;
+  max-height: 20px;
+  min-height: 20px;
+  margin: 0px 0px 0px 26px;
   cursor: pointer;
 }
 
@@ -2079,4 +2094,42 @@ button {
       background: rgba(161, 168, 181, 0.4);
     }
   }
+}
+.payment_section {
+  .load_preview {
+    margin: 0px 0px 24px 0px;
+  }
+}
+.aprove_payment {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  color: #acb4be;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 14px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.loaded_check_approve {
+  border-radius: 10px;
+  padding: 14px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #1e4179;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  color: #ffffff;
 }
