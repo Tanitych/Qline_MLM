@@ -123,3 +123,35 @@ const swiper = new Swiper('.swiper', {
         }
     }
 });
+
+///////////////
+let file_array = [];
+
+function scrollBottom() {
+    let element = document.querySelector('.chat-item-body');
+    element.scrollTop = element.scrollHeight - element.clientHeight;
+}
+
+scrollBottom();
+
+$("#chat-file").change(function () {
+    let input_files = document.getElementById('chat-file').files;
+
+    $.each(input_files, function (index, value) {
+        file_array.push(value);
+        $('.preview__container').append(`
+        <div class="preview__content">
+            <div class="img file_img"><img src="img/icons/profile.svg" alt=""><img class="file-cross delete_file" data-id="${file_array.length - 1}" src="img/icons/корзина.svg" alt=""></div>
+         
+            
+           
+        </div>
+        `);
+    });
+});
+
+$(document.body).on('click', '.delete_file', function () {
+    let file_id = $(this).data('id');
+    delete file_array[file_id];
+    $(this).parent().remove();
+});
