@@ -3185,3 +3185,94 @@ button.basket:hover {
   background: #f8e114;
   color: #f0f0f0;
 }
+
+.accepted_section {
+  background: #e4effe;
+  padding: 130px 0px 165px 0px;
+}
+@media (max-width: 768px) {
+  .accepted_section {
+    padding: 90px 0px;
+  }
+}
+.accepted_section .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .accepted_section .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.accepted_section .left {
+  margin: 0px 20px 0px 0px;
+}
+@media (max-width: 768px) {
+  .accepted_section .left {
+    margin: 0px 0px 20px 0px;
+  }
+}
+.accepted_section .left .title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.01em;
+  color: #1e4179;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .accepted_section .left .title {
+    font-size: 40px;
+    line-height: 115%;
+  }
+}
+.accepted_section .left .text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  margin-bottom: 30px;
+}
+.accepted_section .right img {
+  max-width: 100%;
+}
+.accepted_section .account_btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  height: 44px;
+  width: 100%;
+  max-width: 270px;
+  background-color: #1e4179;
+  border-radius: 46px;
+  padding: 10px 24px;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.accepted_section .account_btn:hover {
+  background-color: #142a4e;
+}
