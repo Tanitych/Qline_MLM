@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qline</title>
+    <link rel="shortcut icon" href="img/header-img/icons/favicon.png" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- @import "header.html" -->
+    <main>
+      <div class="background_block">
+        <img src="img/Frame 378 (1).jpg" alt="" />
+        <h2 class="title">Оформление заказа</h2>
+      </div>
+      <div class="bread_crumps">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="content">
+                <a href=""
+                  >Главная <img src="img/icons/Vector.svg" alt="" />
+                </a>
+                <a href="">Каталог<img src="img/icons/Vector.svg" alt="" /> </a>
+                <a href="">Корзина<img src="img/icons/Vector.svg" alt="" /> </a>
+                <a href="" class="active">Оформление заказа </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="ordering_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="title">Оформление заказа</h2>
+              <p class="subtitle">
+                Заполните данные для получения покупки и выберите способ оплаты
+              </p>
+              <div class="ordering_content">
+                <form action="" class="order_form">
+                  <h4 class="title">Контактные данные</h4>
+                  <label class="order_label" for="name">
+                    <p class="label_text">ФИО</p>
+                    <input required type="text" id="name" />
+                  </label>
+                  <label class="order_label" for="phone">
+                    <p class="label_text">Номер телефона</p>
+                    <input type="tel" required id="phone" />
+                  </label>
+                  <label class="order_label" for="mail">
+                    <p class="label_text">E-mail</p>
+                    <input required type="email" id="mail" />
+                  </label>
+                  <div class="tabs_form_ordering">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="home-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#home"
+                          type="button"
+                          role="tab"
+                          aria-controls="home"
+                          aria-selected="true"
+                        >
+                          Доставка
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="profile-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#profile"
+                          type="button"
+                          role="tab"
+                          aria-controls="profile"
+                          aria-selected="false"
+                        >
+                          Самовызов
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="home"
+                        role="tabpanel"
+                        aria-labelledby="home-tab"
+                      >
+                        <label class="order_label" for="city">
+                          <p class="label_text">Город</p>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="city"
+                          >
+                            <option selected="">Алматы</option>
+                            <option value="1">Актау</option>
+                            <option value="2">Шымкент</option>
+                            <option value="3">Кулсары</option>
+                          </select>
+                        </label>
+                        <label class="order_label" for="street">
+                          <p class="label_text">Улица</p>
+                          <input required type="text" id="street" />
+                        </label>
+                        <div class="tripple_input">
+                          <label class="order_label" for="house">
+                            <p class="label_text">Дом</p>
+                            <input required type="number" id="house" />
+                          </label>
+                          <label class="order_label" for="office">
+                            <p class="label_text">Квартира/Офис</p>
+                            <input required type="number" id="office" />
+                          </label>
+                          <label class="order_label" for="entrance">
+                            <p class="label_text">Подъезд</p>
+                            <input type="number" id="entrance" />
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="profile"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab"
+                      >
+                        <p class="text">Адрес самовывоза</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="total_btn">Перейти к оплате</button>
+                </form>
+                <div class="aside_block">
+                  <p class="title">Ваш заказ:</p>
+                  <div class="total_order_block">
+                    <div class="head">
+                      <p class="title">Заказ на сумму 42 200 ₸</p>
+                      <p class="label">3 товара</p>
+                    </div>
+                    <div class="content">
+                      <div class="item">
+                        <div class="item_img">
+                          <img src="img/total1.jpg" alt="" />
+                        </div>
+                        <div class="text_side">
+                          <p class="text">Крем для упругости кожи лица</p>
+                          <span>100 мл</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="item_img">
+                          <img src="img/total2.jpg" alt="" />
+                        </div>
+                        <div class="text_side">
+                          <p class="text">Крем для упругости кожи лица</p>
+                          <span>100 мл</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="item_img">
+                          <img src="img/total3.jpg" alt="" />
+                        </div>
+                        <div class="text_side">
+                          <p class="text">Крем для упругости кожи лица</p>
+                          <span>100 мл</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="foot">
+                      <button>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M15.979 2.175C16.334 1.75192 16.9648 1.69674 17.3878 2.05174L20.452 4.62289C20.8751 4.97789 20.9303 5.60865 20.5753 6.03172L12.0307 16.2148C11.8561 16.4228 11.6045 16.5509 11.3336 16.5696L7.59991 16.828L7.206 13.1061C7.17742 12.8361 7.25987 12.5661 7.4344 12.3581L15.979 2.175Z"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                          <rect
+                            x="3"
+                            y="20"
+                            width="18"
+                            height="2"
+                            rx="1"
+                            fill="white"
+                          /></svg
+                        >Изменить заказ
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tip">
+                    <p class="text">
+                      <span>Доставка и самовывоз </span> осуществляется только в
+                      4х городах: Алматы,Актау, Шымкент, Кулсары
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- @import "footer.html" -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

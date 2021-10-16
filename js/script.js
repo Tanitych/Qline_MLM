@@ -153,3 +153,6 @@ $(document.body).on('click', '.delete_file', function () {
     $(this).parent().remove();
 });
 
+$(function () {
+    $("#phone").mask("+7(999) 999-9999");
+});
