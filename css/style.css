@@ -2504,6 +2504,8 @@ button.basket:hover {
 }
 .card_content .item .datas .numbers {
   margin: 0px 0px 0px 0px;
+  text-align: end;
+  white-space: nowrap;
 }
 
 .modal-dialog {
@@ -3360,7 +3362,7 @@ button.basket:hover {
 }
 @media (max-width: 768px) {
   .accepted_section {
-    padding: 90px 0px;
+    padding: 70px 0px 90px 0px;
   }
 }
 .accepted_section .content {

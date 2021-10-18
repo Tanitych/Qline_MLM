@@ -1973,6 +1973,8 @@ button {
       align-items: center;
       .numbers {
         margin: 0px 0px 0px 0px;
+        text-align: end;
+        white-space: nowrap;
       }
     }
   }
@@ -2637,7 +2639,7 @@ button {
   background: #e4effe;
   padding: 130px 0px 165px 0px;
   @media (max-width: 768px) {
-    padding: 90px 0px;
+    padding: 70px 0px 90px 0px;
   }
   .content {
     display: flex;
