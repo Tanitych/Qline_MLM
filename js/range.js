@@ -6,15 +6,15 @@ $(document).ready(function () {
     var rangeSlider = document.getElementById('slider-range');
     var moneyFormat = wNumb({
         decimals: 0,
-        thousand: ',',
+        thousand: ' ',
         // prefix: '₸'
     });
     noUiSlider.create(rangeSlider, {
-        start: [0, 100],
+        start: [2000, 20000],
         step: 1,
         range: {
-            'min': [0],
-            'max': [500]
+            'min': [2000],
+            'max': [40000]
         },
         format: moneyFormat,
         connect: true
